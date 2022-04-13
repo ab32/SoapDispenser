@@ -1,7 +1,7 @@
 #include <Servo.h>
 #include <Arduino.h>
 
-Servo servo
+Servo servo;
 // ---------------------------------------------------------------- //
 // Arduino Ultrasoninc Sensor HC-SR04
 // Re-writed by Kevin Abdul
@@ -9,10 +9,10 @@ Servo servo
 // Using HC-SR04 Module
 // Tested on 17 September 2019
 // ---------------------------------------------------------------- //
-#define Signal 4
-#define echoPin 3 // attach pin D2 Arduino to pin Echo of HC-SR04
-#define trigPin 2 //attach pin D3 Arduino to pin Trig of HC-SR04
-long duration; // variable for the duration of sound wave travel
+#define Signal 9
+#define echoPin 3 // attach pin D3 Arduino to pin Echo of HC-SR04
+#define trigPin 2 //attach pin D2 Arduino to pin Trig of HC-SR04
+int duration; // variable for the duration of sound wave travel
 int distance; // variable for the distance measurement
 int pos;
 void setup() {
@@ -38,19 +38,16 @@ void loop() {
   distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
   // Displays the distance on the Serial Monitor
   Serial.print("Distance: ");
-  Serial.print(distance);
+  Serial.println(distance);
   if(distance <= 13){
-  	for ( ;pos >= 40; pos -= 1){ 
+    for ( pos; pos >= 40; pos--){ 
     servo.write(pos);             
     delay(15);                        
-  	 }
-    }
-	else
-    {
-  for ( ;pos <= 80; pos += 1) 
-  { 
+     }
+    }else{
+    for (pos; pos <= 80; pos++){      
     servo.write(pos);             
     delay(5);                        
    }
 }
-
+}
