@@ -6,3 +6,24 @@ A motion sensor soap dispenser built using ***Arduino nano***, ***Ultrasonic Sen
 
 # Description
 
+I will be going through the process step by step so that you as the reader can follow along. I got motivated by a classmate to start doing projects. This is my first ever project uploaded anywhere on the internet so be kind. **First of I need to insert a caution, that you as a reader use the right type of servo, because I didn't do it. It was a design flaw. I used a 9g servo, it is a very tiny one and doesn't output enough force to pull down the soap dispenser. Anything stronger than the 9g servo will do the job.**
+
+This project is very easy executable and even people whom are new to programming can follow along. You just have to connect everything right with the ultrasonic sensor, arduino nano and the servo then the code will do the rest. You can even change the angle of which the servo will move.
+
+# Getting started
+
+The component needed for this project are very basic and you might have access to it. 
+
+The components for the soap dispenser are:
+* **Servo**
+* **Ultrasonic Sensor HC-SR04**
+* **Arduino nano**
+* **Breadboard**(Optional)
+* **9V battery**
+
+Follow these steps to get it working, first of you need to follow the schematics down below to get everything to work properly. 
+![arduino uno motion detector](https://user-images.githubusercontent.com/44835095/163576349-197563ae-33a7-4417-953b-27b4978afc52.PNG)
+
+Once you've connected every output and input it should be working. If you arent connected to you're computer it wont work. So this is where you use a **9V battery** and connect it to the Vin inputs on the right side of **GND** on the arduino nano board.
+
+Next off you download getInfoFromArduino.cpp file from the repository. This file contains all the coding for the servo and the attached sensor. Last but not least you need to have the Arduino IDE downloaded on your computer. You then insert the code throug the arduino IDE and upload the sketch to your arduino nano and it should be working after this step.
