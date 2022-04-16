@@ -26,4 +26,4 @@ Follow these steps to get it working, first of you need to follow the schematics
 
 Once you've connected every output and input it should be working. If the ardunio nano is missing a power source it will not work. Either have it connected to your computer via USB or use a **9V** power source and connect with pin **Vin**.
 
-Next off you download getInfoFromArduino.cpp file from the repository. This file contains all the coding for the servo and the attached sensor. Last but not least you need to have the Arduino IDE downloaded on your computer. You then insert the code throug the arduino IDE and upload the sketch to your arduino nano and it should be working after this step.
+Next off you download getInfoFromArduino.cpp file from the repository. 
