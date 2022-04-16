@@ -26,4 +26,4 @@ Follow these steps to get it working, first of you need to follow the schematics
 
 Once you've connected every output and input it should be working. If the ardunio nano is missing a power source it will not work. Either have it connected to your computer via USB or use a **9V** power source and connect with pin **Vin**.
 
-Next off you download getInfoFromArduino.cpp file from the repository. 
+Download the sketch **sketch_soap_dispenser.ino** from the repository. Open with Arduino IDE, verify then upload to your nano board. It should start working right away.
