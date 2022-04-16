@@ -24,6 +24,6 @@ The components for the soap dispenser are:
 Follow these steps to get it working, first of you need to follow the schematics down below to get everything to work properly. 
 ![arduino uno motion detector](https://user-images.githubusercontent.com/44835095/163576349-197563ae-33a7-4417-953b-27b4978afc52.PNG)
 
-Once you've connected every output and input it should be working. If you arent connected to you're computer it wont work. So this is where you use a **9V battery** and connect it to the Vin inputs on the right side of **GND** on the arduino nano board.
+Once you've connected every output and input it should be working. If the ardunio nano is missing a power source it will not work. Either have it connected to your computer via USB or use a **9V** power source and connect with pin **Vin**.
 
 Next off you download getInfoFromArduino.cpp file from the repository. This file contains all the coding for the servo and the attached sensor. Last but not least you need to have the Arduino IDE downloaded on your computer. You then insert the code throug the arduino IDE and upload the sketch to your arduino nano and it should be working after this step.
