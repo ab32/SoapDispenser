@@ -2,7 +2,8 @@
 
 A motion sensor soap dispenser built using ***Arduino nano***, ***Ultrasonic Sensor HC-SR04*** and a ***servo***
 
-![bottle_001](https://user-images.githubusercontent.com/44835095/170708714-a3d876a3-9615-4263-aca4-6eb67f71b885.jpg)
+![rsz_bottle_001](https://user-images.githubusercontent.com/44835095/170708928-3acceebb-f2c8-4ae7-bb28-dbf3a23d0317.jpg)
+
 
 # Description
 
